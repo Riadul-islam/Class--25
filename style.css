@@ -1,0 +1,110 @@
+.pricing{
+    background-color: #f6f9fc;
+}
+
+.pricing h3{
+    position: relative;
+    display: inline-block;
+}
+.pricing .text h3::after{
+    content: "";
+    position: absolute;
+    top: 42px;
+    right: 80px;
+    height: 6%;
+    width: 60px;
+    background-color: #2857ea;
+}
+.box{
+    transition: all .8s;
+}
+.box h3{
+    font-size: 40px;
+}
+.box h6{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #ddd; 
+}
+.box:hover{
+    color: #fff !important;
+    background-color: #2857ea;
+    
+
+}
+
+.box:hover button{
+    background-color: #fff;
+    color: #2857ea;
+}
+button{
+    position: relative;
+    transition: .6s;
+     overflow: hidden;
+     z-index: 99;
+}
+button:hover{
+    color: #fff !important;
+}
+button::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: .8s;
+    z-index: -1;
+    background-color: #2857ea;
+    
+}
+button:hover::after{color: #fff !important;
+
+    border: none;
+    width: 100%;
+  
+
+}
+
+
+/* banner */
+.banner{
+    background: linear-gradient( rgba(0, 0, 255, 0.4), rgba(0, 0, 255, 0.4)), url(./free-bg.jpg) no-repeat top center;
+    background-size: cover;
+    padding: 150px 0 !important;
+    margin-bottom: 200px;
+}
+.banner h3{
+    position: relative;
+    display: inline-block;
+}
+
+.banner h3::after{
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 300px;
+    height: 6%;
+    width: 60px;
+    background-color: #fff;
+}
+
+
+
+.banner button:hover{
+    color: #fff !important;
+}
+
+/* Box-left */
+.box-left{
+    background-color: #3763eb;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    border-radius: 5px;
+}
+.box-left button{
+    background-color: #3763eb;
+    border: 1px solid #fff !important;
+}
